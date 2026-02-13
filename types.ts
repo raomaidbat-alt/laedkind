@@ -10,5 +10,6 @@ export interface Prompt {
 export interface Category {
   id: string;
   name: string;
+  strategy: string[];
   prompts: Prompt[];
 }
