@@ -4,8 +4,9 @@ export interface Prompt {
   title: string;
   description: string;
   content: string;
-  niche: 'it' | 'ecom' | 'local' | 'experts';
-  type: 'ads' | 'funnel' | 'content' | 'bot' | 'strategy';
+  niche: 'it' | 'ecom' | 'local' | 'experts' | 'marketing' | 'strategy';
+  type: 'ads' | 'funnel' | 'content' | 'bot' | 'strategy' | 'copywriting';
+  exampleImages?: string[];
 }
 
 export interface Category {
