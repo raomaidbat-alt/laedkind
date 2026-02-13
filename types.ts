@@ -4,12 +4,13 @@ export interface Prompt {
   title: string;
   description: string;
   content: string;
-  additionalInfo?: string;
+  niche: 'it' | 'ecom' | 'local' | 'experts';
+  type: 'ads' | 'funnel' | 'content' | 'bot' | 'strategy';
 }
 
 export interface Category {
   id: string;
   name: string;
-  strategy: string[];
+  coreStrategy: string[];
   prompts: Prompt[];
 }

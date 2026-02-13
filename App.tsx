@@ -117,18 +117,18 @@ const FilterBar: React.FC<{
 
 const StrategyBlock: React.FC<{ category: Category }> = ({ category }) => {
   return (
-    <div className="reveal mb-12 bg-gradient-to-br from-cyan-950/20 to-purple-950/20 backdrop-blur-xl border border-cyan-500/10 rounded-[2.5rem] p-8 md:p-12 shadow-[0_0_80px_rgba(0,240,255,0.03)]">
+    <div className="reveal mb-12 bg-gradient-to-br from-cyan-950/20 to-purple-950/20 backdrop-blur-xl border border-cyan-500/20 rounded-[2.5rem] p-8 md:p-12 shadow-[0_0_80px_rgba(0,240,255,0.05)]">
       <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-10">
         <div className="w-16 h-16 rounded-[1.5rem] bg-cyan-500 flex items-center justify-center text-black shadow-[0_0_30px_rgba(0,240,255,0.3)]">
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
         </div>
         <div>
-          <h4 className="text-cyan-400 text-[10px] font-black uppercase tracking-[0.5em] mb-2 opacity-70">Main Strategy Layer</h4>
-          <h2 className="text-3xl md:text-4xl font-black Orbitron text-white tracking-tight">Ниша: {category.name}</h2>
+          <h4 className="text-cyan-400 text-[10px] font-black uppercase tracking-[0.5em] mb-2 opacity-70">Core Strategy Channels</h4>
+          <h2 className="text-3xl md:text-4xl font-black Orbitron text-white tracking-tight">Ядро стратегии: {category.name}</h2>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {category.strategy.map((item, idx) => (
+        {category.coreStrategy.map((item, idx) => (
           <div key={idx} className="flex items-start gap-4 text-gray-400 group p-4 rounded-2xl hover:bg-white/5 transition-all">
             <div className="mt-1.5 w-2 h-2 rounded-full bg-cyan-500 shadow-[0_0_15px_#00f0ff] group-hover:scale-125 transition-transform shrink-0"></div>
             <p className="text-sm md:text-base leading-relaxed group-hover:text-cyan-50 text-gray-300 font-medium">{item}</p>
@@ -152,21 +152,31 @@ const PromptCard: React.FC<{ prompt: Prompt }> = ({ prompt }) => {
     }
   };
 
+  const getIcon = () => {
+    switch(prompt.type) {
+      case 'ads': return <path d="M11 5.882V19.297A1.235 1.235 0 0 1 9.765 20.532H2.235A1.235 1.235 0 0 1 1 19.297V5.882A1.235 1.235 0 0 1 2.235 4.647h7.53A1.235 1.235 0 0 1 11 5.882zm10.765 0V19.297A1.235 1.235 0 0 1 20.53 20.532h-7.53a1.235 1.235 0 0 1-1.235-1.235V5.882a1.235 1.235 0 0 1 1.235-1.235h7.53a1.235 1.235 0 0 1 1.235 1.235z"/>;
+      case 'bot': return <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z M12 6a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V7a1 1 0 0 0-1-1zm0 8a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 12 14z"/>;
+      default: return <path d="M13 10V3L4 14h7v7l9-11h-7z"/>;
+    }
+  }
+
   return (
     <article className="reveal group bg-[#0d1117]/40 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-10 border border-white/5 transition-all duration-700 hover:-translate-y-3 hover:border-cyan-500/30">
       <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-8">
         <div className="flex-1">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-8 h-[1px] bg-cyan-500/50"></div>
-            <span className="text-cyan-500/60 text-[9px] font-black uppercase tracking-[0.4em]">Active Module</span>
+            <span className="text-cyan-500/60 text-[9px] font-black uppercase tracking-[0.4em]">{prompt.type} Module</span>
           </div>
           <h3 className="text-2xl md:text-3xl font-black text-white Orbitron mb-4 tracking-tight leading-tight group-hover:text-cyan-400 transition-colors">
             {prompt.title}
           </h3>
           <p className="text-gray-500 text-sm leading-relaxed max-w-xl font-light">{prompt.description}</p>
         </div>
-        <div className="bg-white/5 p-4 rounded-3xl border border-white/10 group-hover:scale-110 transition-transform hidden md:block">
-          <svg className="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+        <div className="bg-white/5 p-4 rounded-3xl border border-white/10 group-hover:scale-110 transition-transform hidden md:block shrink-0">
+          <svg className="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+            {getIcon()}
+          </svg>
         </div>
       </div>
 
@@ -181,17 +191,7 @@ const PromptCard: React.FC<{ prompt: Prompt }> = ({ prompt }) => {
         onClick={handleCopy}
         className={`w-full py-5 rounded-2xl font-black Orbitron tracking-[0.2em] text-xs transition-all duration-500 flex items-center justify-center gap-4 ${copied ? 'bg-green-500 text-black shadow-[0_0_30px_rgba(34,197,94,0.3)]' : 'bg-white/5 text-cyan-400 hover:bg-cyan-500 hover:text-black border border-cyan-500/20 hover:border-cyan-500'}`}
       >
-        {copied ? (
-          <>
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-            КОПИЯ В БУФЕРЕ
-          </>
-        ) : (
-          <>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
-            СКОПИРОВАТЬ ПРОМПТ
-          </>
-        )}
+        {copied ? 'УСПЕШНО СКОПИРОВАНО' : 'ЗАГРУЗИТЬ В ПАМЯТЬ'}
       </button>
     </article>
   );
@@ -271,14 +271,14 @@ const App: React.FC = () => {
       <footer className="py-32 border-t border-white/5 text-center relative overflow-hidden bg-black/40">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-6xl font-black Orbitron mb-12 gradient-text tracking-tighter">DOMINATE THE MARKET</h2>
+          <h2 className="text-4xl md:text-6xl font-black Orbitron mb-12 gradient-text tracking-tighter uppercase">Market Domination</h2>
           <div className="flex flex-wrap justify-center gap-10 mb-20">
-            <span className="text-gray-600 uppercase text-[10px] font-black tracking-[0.4em]">Mainframe 2.5</span>
-            <span className="text-gray-600 uppercase text-[10px] font-black tracking-[0.4em]">Protocols: Secure</span>
-            <span className="text-gray-600 uppercase text-[10px] font-black tracking-[0.4em]">Uptime: 99.9%</span>
+            <span className="text-gray-600 uppercase text-[10px] font-black tracking-[0.4em]">Core 2.5 Active</span>
+            <span className="text-gray-600 uppercase text-[10px] font-black tracking-[0.4em]">Node: Vercel Cloud</span>
+            <span className="text-gray-600 uppercase text-[10px] font-black tracking-[0.4em]">Status: Ready</span>
           </div>
           <p className="text-gray-700 text-[9px] font-black uppercase tracking-[0.8em] opacity-40">
-            © 2026 // CYBERPROMPT COLLECTOR // DESIGNED FOR WINNERS
+            © 2026 // CYBERPROMPT // ALL SYSTEMS OPERATIONAL
           </p>
         </div>
       </footer>
