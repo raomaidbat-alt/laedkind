@@ -1,248 +1,214 @@
-
 import { Category } from './types';
 
 export const PROMPT_CATEGORIES: Category[] = [
   {
     id: 'it_startups',
     name: 'IT Стартапы',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200',
     coreStrategy: [
-      "Гугл/Яндекс поиск + контекст (запросы с намерением, быстрые лиды).",
-      "Сайт + ленды/конвертер (основа воронки, free trial / демо).",
-      "Вебинары/демо-сессии как формат продаж.",
-      "Контент + Телеграм / соцсети (регулярный прогрев, кейсы, разборы).",
-      "Кейсы/отзывы + продающее видео (social proof, демонстрация продукта).",
-      "Пробник (free trial, freemium) как обязательный оффер."
+      "Hyper-Scale Search Arbitrage (Contextual & Semantic).",
+      "SaaS Lean Landing Architectures with Aha-Moment triggers.",
+      "High-Fidelity Automated Product Demo & Discovery Funnels.",
+      "Authority-Driven Engineering Blogs (SEO & Trust).",
+      "Exponential Viral Loops & Growth Hacking Protocols.",
+      "Freemium to Enterprise Pipeline Automation."
     ],
     prompts: [
       {
-        id: 'it-ads-context',
-        title: 'Ads: Контекст Яндекс/Google (IT)',
-        description: 'Генерация объявлений с высоким CTR для привлечения теплых лидов на SaaS.',
+        id: 'it-1',
+        title: 'Strategy: The VC-Grade PMF Expansion Matrix',
+        description: 'Комплексный анализ рынка и создание фундамента для экспоненциального роста.',
+        niche: 'it',
+        type: 'strategy',
+        content: `PERSONA: You are a World-Class Venture Capital Strategist and Product Architect (ex-Partner at Sequoia or Y Combinator). Your goal is to find the "unfair advantage" of a startup and weaponize it.
+
+CONTEXT: The user has a startup named [Product Name] solving [Problem] for [Target Audience].
+
+TASK: Develop a Hyper-Growth Blueprint.
+CHAIN OF THOUGHT:
+1. MARKET ARCHAEOLOGY: Identify 3 high-yield micro-niches (Blue Oceans) where competitors are too slow to react.
+2. VALUE PROP SYNOPSIS: Construct an Irresistible Offer using the 'High-Stakes' formula: "For [ICP], we eliminate [Pain] via [Secret Sauce], delivering [Quantifiable ROI] in [Timeframe]."
+3. UNIT ECONOMICS SIMULATION: Calculate target CAC/LTV and identify the "North Star Metric" that drives 90% of value.
+4. VIRAL ENGINE: Design a mechanism where the product becomes better the more people use it (Network Effect).
+5. THE INVESTOR DECK PITCH: Write a compelling 100-word Executive Summary for a Series A funding round.
+
+CONSTRAINTS: Be brutal, analytical, and data-driven. Avoid fluff.`
+      },
+      {
+        id: 'it-2',
+        title: 'Ads: Hyper-Intent Search Dominance 4.0',
+        description: 'Контекстная реклама, которая попадает точно в запрос клиента и закрывает возражения.',
         niche: 'it',
         type: 'ads',
-        content: `Роль: Senior Media Buyer в IT-нише.
-Задача: Создать адаптивные объявления для Яндекс.Директ и Google Ads.
-Продукт: [Название и суть IT-решения]
+        content: `PERSONA: You are a Senior Media Buying Director with $10M+ in managed spend for Tier-1 SaaS companies.
+PRODUCT: [Name]
 
-Требования:
-1. Заголовки (10 шт, до 56 симв): С акцентом на "Автоматизация", "Экономия X%", "Интеграция за 5 мин".
-2. Тексты (5 шт, до 81 симв): Отработка боли "сложно внедрить" и "дорого стоит".
-3. Быстрые ссылки: "Тарифы", "Демо-доступ", "Кейсы лидеров", "Безопасность (ISO)".
-4. Ключевые запросы: Список из 20 фраз (коммерческие + информационные с высоким интентом).`
+INSTRUCTIONS:
+1. SEMANTIC CORE: Extract 25 long-tail keywords with "High Commercial Intent" (ready to buy).
+2. AD COPY PSYCHOLOGY:
+   - 10 Headlines: Use 'Benefit-Driven' hooks (e.g., "Automate [Pain] in 10s").
+   - 5 Description Blocks: Use the PAS (Problem-Agitation-Solution) model with an added 'Urgency' layer.
+3. CONVERSION SITES: Propose 4 'Sitelink' extensions that highlight: Pricing Transparency, Free Trial, Enterprise Security (SOC2), and Top-Tier Case Studies.
+4. RETARGETING LOOPS: Script 3 different retargeting ads to win back abandoned sign-ups.
+
+OUTPUT: A copy-paste ready table for Google Ads / Yandex Direct.`
       },
       {
-        id: 'it-funnel-strategy',
-        title: 'Funnel: Стратегия "Free Trial to Paid"',
-        description: 'Полная воронка: от лендинга до конвертации пользователя в платную подписку.',
-        niche: 'it',
-        type: 'funnel',
-        content: `Роль: Growth Hacker / Product Architect.
-Задача: Разработать воронку конвертации для [Название продукта].
-
-Составь план:
-1. Landing Page: Структура блоков (Hero, Aha-moment, Features, Pricing, Trust).
-2. Onboarding Flow: 3 шага для получения первой ценности (First Success).
-3. Email/Bot Chain: Цепочка из 5 касаний (Польза -> Кейс -> Ограничение триала -> Спецпредложение).
-4. Webinar/Demo Script: План 15-минутной сессии, которая закрывает на оплату.`
-      },
-      {
-        id: 'it-bot-support',
-        title: 'Bot: Интеллектуальный Sales-Ассистент',
-        description: 'Скрипт бота для квалификации лидов и записи на демо.',
+        id: 'it-3',
+        title: 'Bot: The "Aha-Moment" Conversion Machine',
+        description: 'Автоматизированный онбординг, который превращает "просто смотрящих" в платных клиентов.',
         niche: 'it',
         type: 'bot',
-        content: `Задача: Написать логику и тексты для Telegram-бота IT-сервиса.
+        content: `PERSONA: You are a Lead Conversion Engineer and UI/UX Psychologist specializing in user retention.
+TASK: Architect an automated onboarding bot sequence for [Product].
 
-Сценарий:
-- Start: Приветствие + оффер (бесплатный чек-лист/аудит).
-- Квалификация: 3 вопроса (Размер команды? Текущая боль? Бюджет?).
-- Прогрев: Выдача кейса, релевантного ответам пользователя.
-- Запись: Интеграция с календарем для Demo-сессии.
-- Дожим: Напоминание, если юзер не дошел до записи.`
+SEQUENCE DESIGN:
+- STEP 0 (Immediate): The 'Quick Win'. Send a personalized message that allows the user to solve their first micro-problem in under 60 seconds.
+- STEP 1 (Day 1): The 'Social Proof' Injection. Share a case study of a user who achieved [Result] within their first week.
+- STEP 2 (Day 3): The 'Objection Killer'. Address the #1 reason why people don't buy (e.g., "Is it hard to integrate?").
+- STEP 3 (Day 5): The 'Strategic Scarcity'. Offer a 48-hour window to upgrade to a Pro plan with a locked-in legacy price.
+- STEP 4 (Day 7): The 'Human Touch'. If not converted, trigger a qualification question for a personalized 15-min demo with a Sales Engineer.
+
+OUTPUT: Logical flow and exact copy for each message.`
       }
     ]
   },
   {
     id: 'ecommerce',
     name: 'E-commerce',
+    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1200',
     coreStrategy: [
-      "Таргет (Meta Ads, TikTok Ads — рилсы/шортсы как основной креатив).",
-      "Гугл/Яндекс Shopping/поиск (высокий intent, до покупки один шаг).",
-      "Сайт/маркетплейс с оптимизированными карточками (конвертер).",
-      "UGC/инфлюенсеры (обзоры, анбоксинги, «до/после»).",
-      "Продающее видео (shorts, рилсы, сторис с демонстрацией товара).",
-      "Акции/спецпредложения + отзывы (стимул к покупке и доверие)."
+      "AI-Generated Dynamic Creative Clusters (Meta/TikTok).",
+      "High-Conversion Product Detail Page (PDP) Optimization.",
+      "User-Generated Content (UGC) Strategy & Scripts.",
+      "Retention & LTV Max (Predictive Email/SMS).",
+      "Marketplace SEO Dominance (Amazon/WB/Ozon).",
+      "Referral & Loyalty Ecosystem Architectures."
     ],
     prompts: [
       {
-        id: 'ecom-ads-target',
-        title: 'Ads: Креативы Meta/TikTok (E-com)',
-        description: 'Сценарии для Рилсов и Шортсов, которые выглядят нативно и продают.',
-        niche: 'ecom',
-        type: 'ads',
-        content: `Роль: Performance Content Creator.
-Задача: Написать 5 сценариев для TikTok/Reels товара [Товар].
-
-Форматы:
-1. "POV: Нашел идеальную замену...": Быстрая эстетика.
-2. "3 причины, почему это нужно каждой...": Рациональный подход.
-3. "Распаковка + Реакция": Эмоциональный триггер.
-4. "До/После": Визуальное доказательство.
-5. "Секретный оффер": Только для зрителей видео.
-
-Для каждого: Hook (0-2 сек), Монтажный план, Текст на экране, CTA.`
-      },
-      {
-        id: 'ecom-marketplace-seo',
-        title: 'Strategy: Карточка-Конвертер WB/Ozon',
-        description: 'SEO-оптимизированное описание, которое выводит в ТОП и закрывает на покупку.',
+        id: 'ec-1',
+        title: 'SEO: The Marketplace Dominator Protocol',
+        description: 'Карточка товара, которая выходит в ТОП и продает без участия менеджера.',
         niche: 'ecom',
         type: 'strategy',
-        content: `Роль: Топ-селлер маркетплейсов.
-Товар: [Название]
+        content: `PERSONA: You are a Top-1% Seller on Amazon/WB/Ozon with a background in Semantic SEO.
+PRODUCT: [Product Name]
+GOAL: Create a listing that dominates search and maximizes conversion.
 
-1. Заголовок: С вхождением 3-х главных ключей.
-2. Описание (AIDA): Внимание на проблему -> Интерес через фичи -> Желание через выгоды -> Призыв.
-3. Инфографика: ТЗ на 5 слайдов (Главный, Характеристики, Применение, Отзывы, Подарок за покупку).
-4. FAQ: Ответы на 5 самых частых сомнений покупателей.`
+EXECUTION PLAN:
+1. SEMANTIC ARCHITECTURE: List the top 10 'Money Keywords' and 20 'LSI' supporting phrases.
+2. CONVERSION-OPTIMIZED TITLE: Write a title that perfectly balances SEO and clickability (CTR).
+3. BULLET POINT PSYCHOLOGY: Translate every technical spec into a visceral emotional benefit (e.g., "1000mAh Battery" -> "Never worry about a dead phone when it matters most").
+4. A+ CONTENT OUTLINE: Describe 5 visual blocks (The Hero shot, The Usage scenario, The Quality close-up, The Social Proof wall, The Cross-Sell).
+5. FRICTION REMOVAL (FAQ): Draft answers to the 5 most common reasons people refund this product.
+
+OUTPUT: Ready-to-upload card data.`
       },
       {
-        id: 'ecom-ugc-brief',
-        title: 'Content: Бриф для блогеров (UGC)',
-        description: 'Инструкция для инфлюенсеров, чтобы получить качественный контент и продажи.',
+        id: 'ec-2',
+        title: 'Social: Viral UGC Scripting Matrix',
+        description: 'Сценарии для видео, которые выглядят как искренняя рекомендация, но продают как агрессивный таргет.',
         niche: 'ecom',
         type: 'content',
-        content: `Задача: Создать бриф для обзора товара [Название].
+        content: `PERSONA: You are a Creative Director for a 9-figure DTC brand specializing in TikTok/Reels.
+TASK: Write 3 Viral UGC Scripts for [Product].
 
-Пункты:
-- Ключевые сообщения (что нельзя забыть сказать).
-- Тон (искренне, без "рекламности").
-- Визуальные требования (свет, макросъемка деталей).
-- Ссылка/Промокод: Интеграция в сторис с активным CTA.
-- Метрики успеха: Что мы считаем хорошим результатом.`
+FRAMEWORK:
+1. THE 'UNFAIR COMPARISON' (Hook: "Stop buying [Competitor]").
+2. THE 'ESTHETIC LIFESTYLE' (Hook: "My life before vs after finding this").
+3. THE 'SCIENTIFIC PROOF' (Hook: "I tested this for 7 days so you don't have to").
+
+FOR EACH SCRIPT:
+- Hook (0-2s): Visual + Audio pattern interrupt.
+- Bridge: Demonstrating the "Problem".
+- Climax: The "Transformation".
+- CTA: Direct instruction (Buy now / Link in bio).
+
+OUTPUT: Detailed montage notes and script.`
       }
     ]
   },
   {
     id: 'local_business',
     name: 'Местный бизнес',
+    image: 'https://images.unsplash.com/photo-1556740734-7f9589455828?auto=format&fit=crop&q=80&w=1200',
     coreStrategy: [
-      "2GIS/Яндекс карты + Гугл Мапс (отзывы, фото, топ в локальной выдаче).",
-      "Гугл/Яндекс локальный поиск (запросы «рядом со мной»).",
-      "Рилс/шортс с геотегами (жизнь заведения, до/после).",
-      "Сторис + закреплённые сторис (услуги, прайс, «как добраться»).",
-      "Пробник/первый визит по спеццене (снятие страха).",
-      "Кейсы/отзывы клиентов (фото/видео до-после)."
+      "Local SEO & Maps Monopoly (GMB/Yandex/2GIS).",
+      "Hyper-Local Radius Targeting (Ads).",
+      "Neighborhood Community Engagement & Branding.",
+      "High-Trust First-Visit Special Offers (Low Friction).",
+      "Automated Booking & Review Acquisition Cycles.",
+      "Visual Social Proof (Before/After localized cases)."
     ],
     prompts: [
       {
-        id: 'local-maps-seo',
-        title: 'Ads: Доминирование в Картах',
-        description: 'План вывода точки в ТОП-3 поисковой выдачи карт по вашему городу.',
+        id: 'loc-1',
+        title: 'Maps: Local Authority & Ranking Monopoly',
+        description: 'Захват первых позиций в картах и привлечение 100% трафика из вашего района.',
         niche: 'local',
         type: 'ads',
-        content: `Роль: Local SEO Expert.
-Бизнес: [Название, город]
+        content: `PERSONA: You are a Local SEO Specialist who helps brick-and-mortar businesses dominate their 5-mile radius.
+BUSINESS: [Service, City, Neighborhood]
 
-1. Описание профиля: Текст с вхождением гео-ключей и ключевых услуг.
-2. Стратегия отзывов: План на 30 дней (как мотивировать клиентов писать отзывы с фото).
-3. Визуальный аудит: Что должно быть на фото (интерьер, процесс, команда, результат).
-4. Акции в Картах: 3 варианта постов для раздела "Новости" в Яндекс/2GIS.`
-      },
-      {
-        id: 'local-reels-geo',
-        title: 'Content: Виральные Гео-Рилсы',
-        description: 'Сценарии видео, которые алгоритмы покажут жителям вашего района.',
-        niche: 'local',
-        type: 'content',
-        content: `Задача: Написать 7 идей для Reels с привязкой к локации.
+STRATEGY:
+1. PROFILE OPTIMIZATION: Write a keyword-rich "Business Description" that includes local landmarks and sub-neighborhood names.
+2. THE 'REVIEW MAGNET' SYSTEM: Create 3 templates for staff to ask for reviews and a "Review Response Protocol" that helps ranking.
+3. LOCAL POST CALENDAR: Write 4 engaging weekly posts for Google/Yandex Maps to show 'Freshness'.
+4. COMPETITOR TAKEOVER: Analyze the top 3 rivals in the 'Map Pack' and tell me how to outperform their category selection and photo count.
 
-Идеи:
-- "Тайное место в [Район]": Зацепка для любопытных.
-- "Знакомство с мастером/поваром": Формирование доверия.
-- "Весь процесс за 15 секунд": Динамика.
-- "Ответ на вопрос соседа": Разбор частой боли.
-- "Как мы работаем ночью/утром": Бэкстейдж.
-
-Для каждой идеи: Заголовок и сценарий на 15 сек.`
-      },
-      {
-        id: 'local-bot-appointment',
-        title: 'Bot: Запись и Напоминания',
-        description: 'Чат-бот, который снижает процент неявок и автоматизирует запись.',
-        niche: 'local',
-        type: 'bot',
-        content: `Роль: CRM-специалист.
-Задача: Логика бота в WhatsApp/Telegram для записи.
-
-Функции:
-- Выбор услуги и мастера.
-- Выбор свободного окна (синхрон с CRM).
-- Напоминание за 24ч и за 2ч до визита.
-- Сбор отзыва через 3ч после визита.
-- Реактивация: Если клиент не был 30 дней, предложить бонус.`
+OUTPUT: Actionable checklist for the business owner.`
       }
     ]
   },
   {
     id: 'experts',
-    name: 'Эксперты и Школы',
+    name: 'Блогеры и Онлайн-школы',
+    image: 'https://images.unsplash.com/photo-1475721027785-f74dea327912?auto=format&fit=crop&q=80&w=1200',
     coreStrategy: [
-      "Рилс/шортс + регулярные сторис (основной прогрев и привлечение).",
-      "Телеграм-канал (длинный прогрев, мини-уроки).",
-      "Вебинары/эфиры как главный продающий формат.",
-      "Продающее видео (кейсы, сторителлинг, разборы).",
-      "Трипваер + бесплатные гайды/чек-листы/уроки (вход в воронку).",
-      "Кейсы/отзывы (скрины результатов, UGC учеников)."
+      "High-Ticket Expert Authority & Positioning.",
+      "Content-to-Conversion (Shorts to Trust) Funnels.",
+      "Lead Magnet to Automated Webinar Pipelines.",
+      "Telegram-Based Depth-of-Trust Ecosystems.",
+      "Strategic Scarcity & High-Pressure Launch Protocols.",
+      "Result-Driven Student Success Architectures."
     ],
     prompts: [
       {
-        id: 'experts-warmup-stories',
-        title: 'Content: 7-дневный Прогрев в Stories',
-        description: 'Сценарий прогрева от боли к покупке основного продукта.',
-        niche: 'experts',
-        type: 'content',
-        content: `Задача: Написать контент-план сторис на неделю для продажи [Продукт].
-
-День 1: Личная история/уязвимость (почему я это делаю).
-День 2: Разоблачение мифов ниши (почему старые методы не работают).
-День 3: Демонстрация экспертности (микро-результат за 5 мин).
-День 4: Кейс ученика (трансформация А -> Б).
-День 5: Презентация программы (внутрянка, смыслы).
-День 6: Окно продаж + дедлайн бонусов.
-День 7: Ответы на вопросы + дожим.`
-      },
-      {
-        id: 'experts-webinar-script',
-        title: 'Strategy: Сценарий Продающего Эфира',
-        description: 'Структура вебинара на 60 минут с конверсией в оплату от 20%.',
+        id: 'exp-1',
+        title: 'Authority: The High-Ticket Personal Brand DNA',
+        description: 'Создание образа элитного эксперта, у которого покупают не раздумывая.',
         niche: 'experts',
         type: 'strategy',
-        content: `Роль: Топ-продюсер онлайн-школ.
-Задача: Сценарий вебинара [Тема].
+        content: `PERSONA: You are a Celebrity Brand Strategist for Top-Tier Online Educators.
+EXPERT: [Name, Niche, Experience]
 
-Блоки:
-- 00-10: Знакомство и Big Idea (Почему сейчас лучшее время?).
-- 10-30: Контентная часть (3 шага к результату, которые можно внедрить сегодня).
-- 30-45: Презентация оффера (Программа, Модули, Тарифы).
-- 45-60: Окно продаж (Бонусы, Ограничение мест, FAQ).
+DEVELOPMENT:
+1. BRAND ARCHETYPE: Define the 'Master Archetype' (The Outlaw, The Sage, or The Sovereign).
+2. UNIQUE MECHANISM: Name the proprietary methodology that makes this expert different from everyone else.
+3. THE 'VILLAIN' IDENTIFICATION: Who/What is the enemy of your audience? (e.g., "The 9-to-5 Grind" or "Old-school Marketing").
+4. POWER BIO: Write 3 versions of a social media bio that scream 'Authority' and 'Result'.
+5. PRICING PSYCHOLOGY: How to anchor a $5,000 product so it feels like a bargain.
 
-Напиши тезисы для каждого блока.`
+OUTPUT: Brand Book Foundation.`
       },
       {
-        id: 'experts-bot-leadmagnet',
-        title: 'Bot: Автоворонка Лид-Магнита',
-        description: 'Бот, который выдает пользу и сразу продает Tripwire (дешевый продукт).',
+        id: 'exp-2',
+        title: 'Funnel: The "Trust-on-Autopilot" Launch Sequence',
+        description: 'Автоматизированная воронка, которая греет аудиторию и продает за вас 24/7.',
         niche: 'experts',
-        type: 'bot',
-        content: `Задача: Сценарий бота для Telegram.
+        type: 'funnel',
+        content: `PERSONA: You are a High-Conversion Sales Funnel Architect.
+GOAL: Convert a stranger into a buyer using a 5-day automated sequence.
 
-Цепочка:
-1. Выдача лид-магнита (Гайд/Видео).
-2. Через 15 мин: "Получилось изучить?". Расширение темы.
-3. Оффер Tripwire: "Реши проблему за 15 мин за 990р вместо 5000р".
-4. Через 24ч: Кейс того, кто купил Tripwire.
-5. Приглашение на основной вебинар/диагностику.`
+SEQUENCE:
+- DAY 0 (Indoctrination): Why you should listen to me. Breaking the biggest myth in [Niche].
+- DAY 1 (The Transformation): Real-world proof that my method works.
+- DAY 2 (The Solution): Introducing the [Product Name]. Why it was created.
+- DAY 3 (The FAQ & Objections): Answering the "Is it for me?" question.
+- DAY 4 (The Deadline): 24 hours left for the exclusive [Bonus/Discount].
+
+OUTPUT: Full message texts for Telegram/Email bot.`
       }
     ]
   }

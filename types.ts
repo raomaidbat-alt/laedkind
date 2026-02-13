@@ -11,6 +11,7 @@ export interface Prompt {
 export interface Category {
   id: string;
   name: string;
+  image: string;
   coreStrategy: string[];
   prompts: Prompt[];
 }
