@@ -74,16 +74,6 @@
       60% { clip: rect(20px, 9999px, 45px, 0); }
       100% { clip: rect(42px, 9999px, 55px, 0); }
     }
-
-    .shimmer {
-      background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.1), transparent);
-      background-size: 200% 100%;
-      animation: shimmer 2s infinite;
-    }
-    @keyframes shimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
-    }
   </style>
 <script type="importmap">
 {
@@ -100,5 +90,6 @@
 <body>
   <div id="root"></div>
   <div class="tron-grid"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
