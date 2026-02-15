@@ -20,68 +20,70 @@ export const PROMPT_CATEGORIES: Category[] = [
         niche: 'strategy',
         type: 'strategy',
         exampleImages: ['https://images.unsplash.com/photo-1551288049-bbdac8626ad1?auto=format&fit=crop&q=80&w=600'],
-        content: `# ROLE: Master of Strategic Positioning (Blue Ocean Strategy Expert)
-# CONTEXT: [ВСТАВЬ ОПИСАНИЕ ПРОДУКТА]
-# TASK: Create a "Category of One" positioning.
+        content: `# РОЛЬ: Мастер стратегического позиционирования (Эксперт по Стратегии Голубого Океана)
+# КОНТЕКСТ: [ВСТАВЬ ОПИСАНИЕ ПРОДУКТА И РЫНКА]
+# ЗАДАЧА: Создать позиционирование "Единственный в своем роде" (Category of One).
 
-## PHASE 1: MARKET DECONSTRUCTION (Chain of Thought)
-1. Identify the "Generic Category" the user thinks they are in.
-2. List 5 standard assumptions/rules of this category that everyone follows.
-3. Find the "Industry Blind Spot" — a customer need that all competitors ignore because it's "too hard" or "not how we do things".
+## ЭТАП 1: ДЕКОНСТРУКЦИЯ РЫНКА (Цепочка рассуждений)
+1. Определи "Общую категорию", в которой, по мнению пользователя, он находится.
+2. Перечисли 5 стандартных правил и догм этой категории, которым следуют все игроки.
+3. Найди "Слепое пятно индустрии" — потребность клиента, которую конкуренты игнорируют, потому что это "слишком сложно" или "так не принято".
 
-## PHASE 2: THE UNIQUE MECHANISM
-- Invent a proprietary name for the process that delivers the result (e.g., "The Rapid Sync Protocol").
-- Explain how this mechanism solves the problem differently than the competition.
+## ЭТАП 2: УНИКАЛЬНЫЙ МЕХАНИЗМ
+- Придумай авторское название для процесса, который дает результат (например, "Протокол квантовой синхронизации").
+- Объясни, почему этот механизм решает проблему фундаментально иначе, чем конкуренты.
 
-## PHASE 3: OUTPUT REQUIREMENTS
-- Define the NEW category name (Max 3 words).
-- Write a 1-sentence "Value Proposition": We are the only [Category] that [Unique Mechanism] for [Audience] to achieve [Result].
-- Write a 3-paragraph "Manifesto of Change" explaining why the old way is dead.
+## ЭТАП 3: РЕЗУЛЬТАТ (OUTPUT)
+- Сформулируй название НОВОЙ категории (макс. 3 слова).
+- Напиши "Ценностное предложение" в 1 предложении: Мы — единственная [Категория], которая [Уникальный механизм] для [Аудитория], чтобы достичь [Результат].
+- Напиши "Манифест перемен" из 3 абзацев, объясняющий, почему старый подход больше не работает.
 
-# CONSTRAINTS: No marketing fluff. Use surgical precision. If data is missing, ask for it.`
+# ОГРАНИЧЕНИЯ: Никакой маркетинговой "воды". Только хирургическая точность. Если данных недостаточно — задай уточняющие вопросы.`
       },
       {
         id: 'f-2',
-        title: 'CustDev 2.0: Deep Intelligence',
+        title: 'CustDev 2.0: Глубинная разведка',
         description: 'Сценарий вопросов по методу "The Mom Test", исключающий ложные подтверждения и лесть.',
         niche: 'strategy',
         type: 'strategy',
-        content: `# ROLE: Senior Product Researcher (Expert in "The Mom Test")
-# TASK: Design a Customer Development interview guide.
+        content: `# РОЛЬ: Старший исследователь продукта (Эксперт по методологии "Спроси маму")
+# ЗАДАЧА: Спроектировать гайд для глубинного интервью (CustDev), чтобы найти "нефть".
 
-## CORE PRINCIPLES:
-1. Talk about their life, not your idea.
-2. Ask about specific past events, never the future.
-3. Talk less, listen more.
+## КЛЮЧЕВЫЕ ПРИНЦИПЫ:
+1. Говори о жизни клиента, а не о своей идее.
+2. Спрашивай о конкретных событиях в прошлом, никогда о будущем.
+3. Меньше говори, больше слушай (правило 80/20).
 
-## INTERVIEW ARCHITECTURE:
-1. **The Life Context:** 3 questions to understand the "Why" behind their actions.
-2. **The Past Pain:** "Tell me about the last time you [Problem]..." (Find the trigger).
-3. **The Current Workaround:** How are they solving it NOW? (If they don't spend money/time, it's not a problem).
-4. **The Value Gap:** What is the specific part of their current solution that sucks most?
+## АРХИТЕКТУРА ИНТЕРВЬЮ:
+1. **Контекст жизни:** 3 вопроса, чтобы понять "Зачем" они делают то, что делают.
+2. **Прошлая боль:** "Расскажите мне о последнем случае, когда вы [Проблема]..." (Найди триггер).
+3. **Текущее решение:** Как они решают это СЕЙЧАС? (Если они не тратят на это время или деньги — проблемы не существует).
+4. **Разрыв ценности:** Какая именно часть их текущего решения бесит больше всего?
 
-## DELIVERABLE:
-- 15 prioritized questions.
-- A "Lies & Red Flags" checklist (How to know if they are just being nice).`
+## ИТОГОВЫЙ ДОКУМЕНТ:
+- Список из 15 приоритетных вопросов.
+- Чек-лист "Ложь и Красные флаги" (Как понять, что респондент просто вежлив).
+- Инструкция по интерпретации ответов.`
       },
       {
         id: 'f-3',
-        title: 'Psychographic Architect: Neural Profile',
+        title: 'Архитектор психографики: Нейро-профиль',
         description: 'Глубинный разбор ЦА через призму когнитивных искажений и подсознательных страхов.',
         niche: 'strategy',
         type: 'strategy',
-        content: `# ROLE: Behavioral Psychologist & Neuromarketing Specialist
-# OBJECTIVE: Map the sub-conscious landscape of [TARGET AUDIENCE].
+        content: `# РОЛЬ: Поведенческий психолог и специалист по нейромаркетингу
+# ЗАДАЧА: Составить карту подсознательных триггеров [ЦЕЛЕВАЯ АУДИТОРИЯ].
 
-## ANALYSIS MODULES:
-1. **The Shadow Motivator:** What is the ONE thing they are ashamed to admit they want (Status, Power, Revenge, Safety)?
-2. **The Decision Friction:** Which cognitive biases stop them from buying (Loss Aversion, Choice Overload, Sunk Cost Fallacy)?
-3. **The Identity Hook:** What is the "Hero's Journey" they imagine themselves in?
-4. **Vocabulary Audit:** 20 specific terms/slang they use when they are frustrated.
+## МОДУЛИ АНАЛИЗА:
+1. **Теневой мотиватор:** Какая ЕДИНСТВЕННАЯ вещь, в которой они боятся признаться сами себе, ими движет (Статус, Власть, Месть, Безопасность)?
+2. **Трение принятия решения:** Какие когнитивные искажения мешают им купить (Неприятие потерь, Паралич выбора, Искажение в пользу статус-кво)?
+3. **Крючок идентичности:** В каком "Пути героя" они себя представляют?
+4. **Аудит словаря:** 20 специфических терминов/сленга, которые они используют, когда злятся или радуются.
 
-## OUTPUT:
-- Detailed Persona Profile (Archetype).
-- 5 "Invisible Selling Points" that trigger action without sounding like an ad.`
+## РЕЗУЛЬТАТ:
+- Детальный профиль персоны (Архетип).
+- 5 "Невидимых точек продаж", которые запускают действие без ощущения рекламы.
+- Список фраз-табу, которые отталкивают эту аудиторию.`
       }
     ]
   },
@@ -93,95 +95,95 @@ export const PROMPT_CATEGORIES: Category[] = [
     prompts: [
       {
         id: 'loc-1',
-        title: 'Maps Dominance: SEO Logic',
+        title: 'Доминирование в Картах: SEO Логика',
         description: 'Алгоритм вывода карточки бизнеса в ТОП выдачи Яндекс.Карт и 2ГИС.',
         niche: 'local',
         type: 'strategy',
-        content: `# ROLE: Local SEO Engineer (Geo-Services Specialist)
-# BUSINESS: [ОПИСАНИЕ БИЗНЕСА И ГЕО-ЛОКАЦИЯ]
+        content: `# РОЛЬ: Инженер локального SEO (Специалист по гео-сервисам)
+# БИЗНЕС: [ОПИСАНИЕ БИЗНЕСА И ГЕО-ЛОКАЦИЯ]
 
-## EXECUTION STEPS:
-1. **Semantic Core Construction:** Generate a list of 50 local LSI keywords (e.g., "nearby", "open now", specific neighborhood names).
-2. **Profile Optimization Protocol:** Rewrite the "About" section using a 70/30 split of SEO keywords and persuasive copy.
-3. **Review Engineering:** Draft 5 "Perfect Review Templates" that include specific keywords and describe high-quality photos to be uploaded by users.
-4. **Service Catalog Optimization:** Rename services to match high-volume search queries.
+## ШАГИ ВЫПОЛНЕНИЯ:
+1. **Сбор семантического ядра:** Создай список из 50 локальных LSI-ключей (например, "рядом", "открыто сейчас", названия районов, метро).
+2. **Протокол оптимизации профиля:** Перепиши раздел "О компании", используя пропорцию 70/30 (SEO-ключи / продающий копирайтинг).
+3. **Инженерия отзывов:** Подготовь 5 шаблонов "Идеальных отзывов", которые содержат нужные ключи и описывают конкретные детали для загрузки фото пользователями.
+4. **Оптимизация каталога услуг:** Переименуй услуги так, чтобы они совпадали с высокочастотными запросами.
 
-# OUTPUT: Full optimization plan + 10-day activity checklist to trigger the algorithm.`
+# РЕЗУЛЬТАТ: Полный план оптимизации + чек-лист активности на 10 дней для активации алгоритмов ранжирования.`
       },
       {
         id: 'loc-2',
-        title: 'Hyper-Local Ad Engine',
-        description: 'Настройка рекламы на радиус 500м-3км с максимальным CTR для жителей ЖК.',
+        title: 'Гиперлокальный рекламный движок',
+        description: 'Настройка рекламы на радиус 500м-3км с максимальным CTR для жителей окрестностей.',
         niche: 'local',
         type: 'ads',
-        content: `# ROLE: Paid Social Strategist (Hyper-Local Expert)
-# GOAL: Capture 80% of foot traffic in a [X]km radius.
+        content: `# РОЛЬ: Стратег по платному трафику (Эксперт по гиперлокальному таргету)
+# ЦЕЛЬ: Захватить 80% внимания людей в радиусе [X] км.
 
-## AD STRATEGY:
-1. **The Local Anchor:** Identify 3 visual landmarks near the business to use in creative.
-2. **The "Neighbor" Offer:** Create a "Welcome to the Neighborhood" offer that is mathematically impossible to ignore.
-3. **Copy Variations:**
-   - [Social Proof]: "Why 500 people in [District] chose us."
-   - [Scarcity]: "Only for residents of [Building Name]."
-   - [Direct]: "3 mins walk from [Landmark]. Free [Offer] inside."
+## РЕКЛАМНАЯ СТРАТЕГИЯ:
+1. **Локальный якорь:** Найди 3 визуальных ориентира рядом с бизнесом для использования в креативах (ЖК, ТЦ, Памятник).
+2. **Оффер "Для соседей":** Создай предложение, которое математически невозможно игнорировать жителям именно этого района.
+3. **Вариации копирайтинга:**
+   - [Социальное доказательство]: "Почему 500 человек из [Район] выбрали нас."
+   - [Дефицит]: "Только для жителей ЖК [Название]."
+   - [Прямой призыв]: "3 минуты от [Ориентир]. Подарок [Оффер] внутри."
 
-# DELIVERABLES: 3 Ad Mockups (Copy + Visual TЗ) + Targeting Parameters.`
+# РЕЗУЛЬТАТ: 3 макета объявлений (Текст + ТЗ для визуала) + Параметры таргетинга.`
       },
       {
         id: 'loc-3',
-        title: 'The "Friendly Hero" Content Plan',
+        title: 'Контент-план "Герой района"',
         description: '30-дневная стратегия контента, превращающая прохожих в постоянных фанатов.',
         niche: 'local',
         type: 'content',
-        content: `# ROLE: Community Manager & Local Content Creator
-# TASK: 30-day "Local Authority" Plan.
+        content: `# РОЛЬ: Комьюнити-менеджер и локальный креатор
+# ЗАДАЧА: Создать план "Авторитет района" на 30 дней.
 
-## PILLARS:
-- **Trust (Behind the Scenes):** Real people, real processes.
-- **Utility (Local Guide):** Helping neighbors with more than just your product.
-- **Engagement (The Polls):** Asking the neighborhood's opinion on store changes.
+## СТОЛПЫ КОНТЕНТА:
+- **Доверие (За кулисами):** Реальные люди, реальные процессы, никакой фальши.
+- **Польза (Местный гид):** Помогай соседям больше, чем просто продавай продукт.
+- **Вовлечение (Опросы):** Спрашивай мнение района о переменах в заведении.
 
-## FORMAT:
-- 12 Reels Scripts (Hook + Value + CTA).
-- 30 Story Sequences (The daily rhythm).
-- 4 Community Events (In-person triggers).
+## ФОРМАТ:
+- 12 сценариев Reels (Крючок + Ценность + Призыв).
+- 30 цепочек Stories (Ежедневный ритм жизни).
+- 4 офлайн-ивента для активации сообщества.
 
-# OUTPUT: Weekly content calendar with specific hooks for [Business Type].`
+# РЕЗУЛЬТАТ: Календарь контента на неделю с конкретными "крючками" для [Тип бизнеса].`
       },
       {
         id: 'loc-4',
-        title: 'Retention Bot: LTV Maximizer',
+        title: 'Retention Bot: Максимизатор LTV',
         description: 'Проектирование логики бота, который возвращает клиентов и собирает отзывы.',
         niche: 'local',
         type: 'bot',
-        content: `# ROLE: CRM & Automation Architect
-# GOAL: Increase Repeat Visits by 40%.
+        content: `# РОЛЬ: Архитектор CRM и автоматизации
+# ЦЕЛЬ: Увеличить количество повторных визитов на 40%.
 
-## BOT LOGIC:
-1. **The Post-Visit Hook:** Automated message 2 hours after visit asking for a rating (Internal 1-10).
-2. **Review Diversion:** If 9-10 -> Link to Google/Yandex. If <7 -> Alert manager immediately.
-3. **The "Miss You" Protocol:** Triggered if no visit for 30 days. High-value discount.
-4. **Loyalty Integration:** Digital punch-card logic.
+## ЛОГИКА БОТА:
+1. **Хук после визита:** Авто-сообщение через 2 часа с просьбой оценить визит по шкале 1-10.
+2. **Фильтр отзывов:** Если 9-10 -> Ссылка на Карты. Если <7 -> Мгновенное уведомление менеджеру.
+3. **Протокол "Мы скучаем":** Триггер, если визита не было 30 дней. Спец. предложение с высоким чеком.
+4. **Интеграция лояльности:** Логика цифровой карты лояльности (каждый 6-й кофе бесплатно и т.д.).
 
-# OUTPUT: Message flow diagram + full copy for all automated triggers.`
+# РЕЗУЛЬТАТ: Схема потока сообщений + готовые тексты для всех автоматических триггеров.`
       },
       {
         id: 'loc-5',
-        title: 'Partnership Growth Protocol',
+        title: 'Протокол партнерского роста',
         description: 'Скрипт и стратегия захвата аудитории соседних бизнесов через Win-Win офферы.',
         niche: 'local',
         type: 'strategy',
-        content: `# ROLE: Business Development Manager (B2B Local)
-# TASK: Secure 5 local partnerships in 14 days.
+        content: `# РОЛЬ: Менеджер по развитию бизнеса (B2B Local)
+# ЗАДАЧА: Заключить 5 локальных партнерств за 14 дней.
 
-## PARTNER SELECTION:
-- Identify 3 non-competing businesses with the SAME target audience.
+## ВЫБОР ПАРТНЕРОВ:
+- Найди 3 неконкурирующих бизнеса с ТОЙ ЖЕ целевой аудиторией в радиусе 1 км.
 
-## THE WIN-WIN PROPOSITION:
-- Design a "Cross-Benefit" offer (e.g., Buy coffee at X, get 10% off at your Y).
-- Write the cold outreach script (Phone and In-person).
+## WIN-WIN ПРЕДЛОЖЕНИЕ:
+- Спроектируй кросс-оффер (например, "Купи кофе в X — получи скидку 10% в твоем Y").
+- Напиши скрипт холодного захода (телефон и личный визит).
 
-# DELIVERABLES: Partner shortlist + Outreach scripts + Referral tracking system.`
+# РЕЗУЛЬТАТ: Список кандидатов + Сценарии переговоров + Система трекинга рефералов.`
       }
     ]
   },
@@ -193,55 +195,55 @@ export const PROMPT_CATEGORIES: Category[] = [
     prompts: [
       {
         id: 'it-1',
-        title: 'SaaS Landing Page: CRO Logic',
+        title: 'SaaS Лендинг: CRO Логика',
         description: 'Архитектура лендинга, основанная на психологии принятия решений и фреймворке Jobs-to-be-Done.',
         niche: 'it',
         type: 'strategy',
-        content: `# ROLE: Senior CRO (Conversion Rate Optimization) Specialist
-# PRODUCT: [SaaS DESCRIPTION]
+        content: `# РОЛЬ: Ведущий специалист по CRO (Оптимизация конверсии)
+# ПРОДУКТ: [ОПИСАНИЕ SaaS]
 
-## PAGE ARCHITECTURE (The "No-Brainer" Flow):
-1. **The Outcome Hero:** Not what it is, but what they BECOME.
-2. **The Logic Proof:** Logo bar + "Trusted by X experts".
-3. **The Chaos vs. Order:** Visualize the "Old Way" (Pain) vs "New Way" (Product).
-4. **The Feature-to-Benefit Engine:** Translate 5 technical features into specific business ROI.
-5. **The Frictionless CTA:** Why start now? (Free trial, no credit card, 2-min setup).
+## АРХИТЕКТУРА СТРАНИЦЫ (Поток "Без раздумий"):
+1. **Outcome Hero:** Не что это такое, а КЕМ станет пользователь.
+2. **Логическое доказательство:** Бар с логотипами + "Нам доверяют X экспертов".
+3. **Хаос против Порядка:** Визуализируй "Старый путь" (Боль) против "Нового пути" (Продукт).
+4. **Feature-to-Benefit Engine:** Переведи 5 технических фич в конкретный ROI для бизнеса.
+5. **Бесшовный CTA:** Почему начать сейчас? (Триала без карты, установка за 2 мин).
 
-# OUTPUT: Full wireframe copy + Design direction for each block.`
+# РЕЗУЛЬТАТ: Полный прототип текстов + ТЗ на дизайн для каждого блока.`
       },
       {
         id: 'it-2',
-        title: 'Growth Loop Architect',
+        title: 'Архитектор виральных петель',
         description: 'Проектирование циклов саморазвития продукта: от инвайтов до виральных артефактов.',
         niche: 'it',
         type: 'strategy',
-        content: `# ROLE: Growth Engineer (Ex-Uber/Reforge)
-# OBJECTIVE: Design a Viral Loop with K-factor > 1.2.
+        content: `# РОЛЬ: Growth Engineer (Ex-Uber/Reforge)
+# ЗАДАЧА: Спроектировать виральную петлю с K-фактором > 1.2.
 
-## ANALYTICAL FRAMEWORK:
-1. **The Fuel:** What motivates the user to invite others? (Ego, Utility, Monetary).
-2. **The Touchpoint:** Where in the user journey is the "Aha! Moment"?
-3. **The Friction Reduction:** How do we make the invite take < 3 seconds?
+## АНАЛИТИЧЕСКИЙ ФРЕЙМВОРК:
+1. **Топливо:** Что мотивирует пользователя приглашать других? (Эго, Польза, Деньги).
+2. **Точка контакта:** В какой момент пути пользователя случается "Aha! Moment"?
+3. **Снижение трения:** Как сделать так, чтобы инвайт занимал < 3 секунд?
 
-# DELIVERABLES:
-- 3 Growth Loop Models (Incentivized, Social, Content-led).
-- Step-by-step UI/UX flow for the most viable loop.`
+# РЕЗУЛЬТАТ:
+- 3 модели виральных петель (Стимулируемая, Социальная, Контентная).
+- Пошаговый UI/UX флоу для самой жизнеспособной петли.`
       },
       {
         id: 'it-3',
-        title: 'Aha! Moment Onboarding',
+        title: 'Onboarding: Путь к Aha! Moment',
         description: 'Проектирование пути пользователя до первой ценности для снижения оттока (Churn).',
         niche: 'it',
         type: 'bot',
-        content: `# ROLE: Product Manager (Onboarding & Activation)
-# GOAL: Reduce Day-1 Churn by 30%.
+        content: `# РОЛЬ: Product Manager (Onboarding & Activation)
+# ЦЕЛЬ: Снизить отток в первый день (Day-1 Churn) на 30%.
 
-## THE ONBOARDING AUDIT:
-1. Identify the ONE action that correlates with long-term retention.
-2. Design a "Straight-Line" path to that action.
-3. Write the "Empty State" copy to guide users when no data is present.
+## АУДИТ ОНБОРДИНГА:
+1. Определи ОДНО действие, которое коррелирует с долгосрочным удержанием.
+2. Спроектируй путь "Прямая линия" до этого действия.
+3. Напиши тексты для "Пустых состояний" (Empty States), чтобы направлять пользователя.
 
-# OUTPUT: Step-by-step Onboarding script + 3-day reactivation email sequence.`
+# РЕЗУЛЬТАТ: Сценарий онбординга по шагам + Цепочка из 3-х реактивационных писем.`
       },
       {
         id: 'it-4',
@@ -249,33 +251,33 @@ export const PROMPT_CATEGORIES: Category[] = [
         description: 'Документ в стиле Y-Combinator, который продает идею за 30 секунд чтения.',
         niche: 'it',
         type: 'strategy',
-        content: `# ROLE: Venture Capital Associate / Pitch Coach
-# PROJECT: [STARTUP DETAILS]
+        content: `# РОЛЬ: Ассоциат венчурного фонда / Коуч по питчам
+# ПРОЕКТ: [ДЕТАЛИ СТАРТАПА]
 
-## THE "ONE-PAGER" SECTIONS:
-1. **The Problem (The Fire):** Why is this urgent?
-2. **The Solution (The Water):** How do you put it out?
-3. **The Market (The Ocean):** TAM/SAM/SOM with realistic logic.
-4. **The Traction (The Engine):** Real numbers, growth rate, retention.
-5. **The Moat (The Castle):** Why can't Google copy you tomorrow?
+## РАЗДЕЛЫ ONE-PAGER:
+1. **Проблема (Пожар):** Почему это срочно?
+2. **Решение (Вода):** Как именно вы тушите пожар?
+3. **Рынок (Океан):** TAM/SAM/SOM с реалистичной логикой.
+4. **Тракшн (Двигатель):** Реальные цифры, темпы роста, удержание.
+5. **Ров (Замок):** Почему Google не скопирует вас завтра?
 
-# OUTPUT: High-density 1-page document ready for VC cold-outreach.`
+# РЕЗУЛЬТАТ: Плотный документ на 1 страницу, готовый к холодной рассылке инвесторам.`
       },
       {
         id: 'it-5',
-        title: 'PLG Content Strategy',
+        title: 'PLG Контент-стратегия',
         description: 'Контент-план, который обучает пользователя решать проблемы с помощью вашего IT-инструмента.',
         niche: 'it',
         type: 'content',
-        content: `# ROLE: Content Strategist (Product-Led Marketing)
-# TARGET: [B2B or B2C SaaS Audience]
+        content: `# РОЛЬ: Контент-стратег (Product-Led Marketing)
+# ЦЕЛЬ: Сделать продукт главным героем каждой статьи.
 
-## CONTENT CATEGORIES:
-- **Pain-Point SEO:** Topics searching for the problem you solve.
-- **Product-in-Action:** Tutorial-style articles/videos.
-- **Thought Leadership:** Challenging the status quo of the industry.
+## КАТЕГОРИИ КОНТЕНТА:
+- **Pain-Point SEO:** Темы, которые ищут люди с проблемой, которую вы решаете.
+- **Продукт в действии:** Обучающие статьи/видео в стиле "Как сделать X за 5 минут".
+- **Thought Leadership:** Брось вызов статус-кво индустрии.
 
-# OUTPUT: 12-week content calendar + Distribution strategy (ProductHunt, HackerNews, LinkedIn).`
+# РЕЗУЛЬТАТ: Контент-календарь на 12 недель + Стратегия дистрибуции (ProductHunt, Reddit, LinkedIn).`
       }
     ]
   },
@@ -287,52 +289,52 @@ export const PROMPT_CATEGORIES: Category[] = [
     prompts: [
       {
         id: 'ec-1',
-        title: 'Marketplace SEO: Algorithmic Top',
+        title: 'SEO Маркетплейсов: Алгоритмический ТОП',
         description: 'Текст карточки (WB/Ozon), который нравится и роботу, и человеку.',
         niche: 'ecom',
         type: 'copywriting',
-        content: `# ROLE: E-commerce SEO Specialist (WB/Ozon Expert)
-# PRODUCT: [PRODUCT NAME + KEY FEATURES]
+        content: `# РОЛЬ: Специалист по SEO на маркетплейсах (Эксперт WB/Ozon)
+# ТОВАР: [НАЗВАНИЕ И КЛЮЧЕВЫЕ ХАРАКТЕРИСТИКИ]
 
-## OPTIMIZATION PROTOCOL:
-1. **Keyword Mining:** Generate 3 tiers of keywords (High, Medium, Low frequency).
-2. **The "Human" Description:** Write 800-1200 chars using the AIDA framework.
-3. **The "Robot" Rich-Content:** How to fill technical specs for maximum category reach.
-4. **Photo-Funnel:** Description of 7 slides (Main, Pain, Solution, Comparison, Quality, Size, CTA).
+## ПРОТОКОЛ ОПТИМИЗАЦИИ:
+1. **Keyword Mining:** Сгенерируй 3 уровня ключей (ВЧ, СЧ, НЧ).
+2. **"Человеческое" описание:** Напиши текст на 800-1200 знаков, используя фреймворк AIDA.
+3. **"Роботизированный" Rich-контент:** Как заполнить доп. характеристики для макс. охвата категорий.
+4. **Инфографика-воронка:** Описание 7 слайдов (Главный, Боль, Решение, Сравнение, Качество, Размер, Призыв).
 
-# OUTPUT: SEO-Optimized Title + Description + Infographic Plan.`
+# РЕЗУЛЬТАТ: SEO-оптимизированный заголовок + Описание + План инфографики.`
       },
       {
         id: 'ec-2',
-        title: 'Viral UGC Scripting',
+        title: 'Сценарии вирального UGC',
         description: 'Сценарии "распаковок" и "честных обзоров", которые закрывают продажи.',
         niche: 'ecom',
         type: 'content',
-        content: `# ROLE: Creative Director (TikTok/Reels Ads)
-# TASK: 3 High-converting UGC scripts.
+        content: `# РОЛЬ: Креативный директор (TikTok/Reels Ads)
+# ЗАДАЧА: Создать 3 высококонверсионных сценария UGC.
 
-## SCRIPT STRUCTURES:
-- **The "I was skeptical" Hook:** Start with doubt, end with surprise.
-- **The "Life Hack" Angle:** Product as a solution to a daily annoyance.
-- **The "Macro-Quality" Show:** Focus on textures, sounds, and craftsmanship.
+## СТРУКТУРЫ СЦЕНАРИЕВ:
+- **Хук "Я была настроена скептически":** Начни с сомнения, закончи восторгом.
+- **Ракурс "Лайфхак":** Товар как решение повседневного раздражения.
+- **"Макро-эстетика":** Фокус на текстурах, звуках и качестве исполнения (ASMR элементы).
 
-# OUTPUT: 3 Scripts with Visual/Audio instructions (Hooks < 3s).`
+# РЕЗУЛЬТАТ: 3 сценария с инструкциями по визуалу и звуку (Хуки < 3 сек).`
       },
       {
         id: 'ec-3',
-        title: 'Abandoned Cart Recovery (Win 20%+)',
+        title: 'Возврат брошенных корзин (Win 20%+)',
         description: 'Цепочка дожима из 3-х сообщений с психологическим обоснованием каждого шага.',
         niche: 'ecom',
         type: 'copywriting',
-        content: `# ROLE: Retention Marketing Expert
-# SCENARIO: User added [PRODUCT] to cart but didn't pay.
+        content: `# РОЛЬ: Эксперт по Retention-маркетингу
+# СЦЕНАРИЙ: Пользователь добавил [ТОВАР] в корзину, но не оплатил.
 
-## EMAIL/SMS SEQUENCE:
-1. **T+1 Hour (The Friendly Nudge):** Assumption of a technical error. No discount yet.
-2. **T+24 Hours (The Social Proof):** "X people bought this while you were thinking." Reviews.
-3. **T+48 Hours (The Scarcity Offer):** Last chance. Small discount or Free shipping (Expires in 6h).
+## ЦЕПОЧКА СООБЩЕНИЙ:
+1. **Т+1 час (Дружелюбное напоминание):** Предположение о техническом сбое. Без скидки.
+2. **Т+24 часа (Социальное доказательство):** "X человек купили это, пока вы думали". Отзывы.
+3. **Т+48 часов (Ультиматум дефицита):** Последний шанс. Скидка на 6 часов или бесплатная доставка.
 
-# OUTPUT: 3 high-converting copy templates + subject lines.`
+# РЕЗУЛЬТАТ: Шаблоны 3-х писем/сообщений + Темы писем с высоким Open Rate.`
       },
       {
         id: 'ec-4',
@@ -340,31 +342,31 @@ export const PROMPT_CATEGORIES: Category[] = [
         description: 'План рекламных макетов для FB/IG/VK Ads с фокусом на окупаемость (ROAS).',
         niche: 'ecom',
         type: 'ads',
-        content: `# ROLE: Media Buyer (E-commerce Focus)
-# BUDGET: [MONTHLY BUDGET]
+        content: `# РОЛЬ: Медиабайер (E-commerce Focus)
+# БЮДЖЕТ: [ЕЖЕМЕСЯЧНЫЙ БЮДЖЕТ]
 
-## CREATIVE TESTING PLAN:
-1. **Concept A (Benefit-driven):** Focus on the #1 transformation.
-2. **Concept B (Comparison):** Us vs. Competition (Visual chart).
-3. **Concept C (Problem-Agitation):** Visualizing the mess before the product.
+## ТЕСТИРОВАНИЕ КРЕАТИВОВ:
+1. **Концепт А (Результат):** Фокус на трансформации "До/После".
+2. **Концепт Б (Сравнение):** Мы против Конкурентов (Визуальная таблица).
+3. **Концепт В (Проблема):** Визуализация хаоса без продукта.
 
-# OUTPUT: Creative Brief for Designer + Copy for 5 Ad Sets.`
+# РЕЗУЛЬТАТ: Креативный бриф для дизайнера + Копирайтинг для 5 групп объявлений.`
       },
       {
         id: 'ec-5',
-        title: 'AI Personal Shopper Logic',
+        title: 'Логика AI-консультанта',
         description: 'Проектирование логики бота-консультанта, который подбирает товар под параметры.',
         niche: 'ecom',
         type: 'bot',
-        content: `# ROLE: Conversational Designer & E-com Strategist
-# GOAL: Replace a human salesperson with a Quiz-Bot.
+        content: `# РОЛЬ: Дизайнер диалоговых систем и стратег E-com
+# ЗАДАЧА: Заменить живого продавца Квиз-ботом.
 
-## DIALOGUE TREE:
-1. **Qualifier:** Segmenting the user (Gift vs Personal, Professional vs Beginner).
-2. **The "Constraint" Filter:** Price range, size, color preferences.
-3. **The Personalized Result:** "Based on your X, we recommend Y because Z."
+## ДЕРЕВО ДИАЛОГА:
+1. **Квалификация:** Сегментация (На подарок или себе? Профи или новичок?).
+2. **Фильтр ограничений:** Ценовой диапазон, размер, предпочтения по стилю.
+3. **Персонализированный результат:** "На основе ваших X, мы рекомендуем Y, потому что Z".
 
-# OUTPUT: Logic Flowchart + Script for the entire quiz.`
+# РЕЗУЛЬТАТ: Блок-схема логики + Скрипты всех веток диалога.`
       }
     ]
   },
@@ -376,87 +378,87 @@ export const PROMPT_CATEGORIES: Category[] = [
     prompts: [
       {
         id: 'ex-1',
-        title: 'Reels-to-DM Sales Funnel',
+        title: 'Reels-to-DM: Авто-воронка',
         description: 'Сценарий видео, которое конвертирует просмотры в заявки в Директ через ключевое слово.',
         niche: 'experts',
         type: 'content',
-        content: `# ROLE: Instagram Growth & Funnel Strategist
-# EXPERTISE: [EXPERT NICHE]
+        content: `# РОЛЬ: Стратег по росту в Instagram и авто-воронкам
+# ЭКСПЕРТИЗА: [НИША ЭКСПЕРТА]
 
-## REELS FORMULA (The "Keyword" Trigger):
-1. **The Pattern Interrupt Hook:** Say something polarizing or unexpected.
-2. **The High-Speed Value:** 3 tips delivered in 7 seconds.
-3. **The Hidden Resource:** "I have a 10-page guide on this..."
-4. **The CTA:** "Comment [WORD] below and my bot will DM you the link."
+## ФОРМУЛА REELS (Триггер ключевого слова):
+1. **Pattern Interrupt Hook:** Скажи что-то противоречивое или неожиданное в первые 2 сек.
+2. **High-Speed Value:** 3 совета за 7 секунд (быстрый монтаж).
+3. **Скрытый ресурс:** "У меня есть 10-страничный гайд по этой теме..."
+4. **CTA:** "Пиши слово [СЛОВО] в комментариях, и мой бот пришлет тебе ссылку".
 
-# OUTPUT: 5 specific Reels scripts + ManyChat automation logic.`
+# РЕЗУЛЬТАТ: 5 сценариев Reels + Логика автоматизации в ManyChat.`
       },
       {
         id: 'ex-2',
-        title: 'High-Ticket Webinar Matrix',
-        description: 'Структура продающего эфира, которая продает за счет смыслов, а не давления.',
+        title: 'Матрица продающего вебинара',
+        description: 'Структура эфира, которая продает за счет смыслов и авторитета, а не давления.',
         niche: 'experts',
         type: 'strategy',
-        content: `# ROLE: High-Ticket Sales Coach (Expert Webinars)
-# PRODUCT: [COURSE/COACHING DESCRIPTION]
+        content: `# РОЛЬ: Коуч по продажам на высокие чеки (Экспертные вебинары)
+# ПРОДУКТ: [ОПИСАНИЕ КУРСА/НАСТАВНИЧЕСТВА]
 
-## WEBINAR TIMELINE:
-- **0-15m (The New Opportunity):** Why the old world changed.
-- **15-45m (The 3 Secrets):** Breaking myths, installing new beliefs.
-- **45-75m (The Stack):** Showing the value. Why it's worth 10x the price.
-- **75-90m (The Fast-Action Bonus):** Rewarding speed.
+## ТАЙМЛАЙН ВЕБИНАРА:
+- **0-15 мин (Новое окно возможностей):** Почему старые методы сдохли.
+- **15-45 мин (3 Секрета):** Разрушение мифов, установка новых убеждений.
+- **45-75 мин (The Stack):** Показ ценности. Почему это стоит в 10 раз дороже цены.
+- **75-90 мин (Бонус за скорость):** Вознаграждение тех, кто принимает решения быстро.
 
-# OUTPUT: 12-section slide-by-slide script + Closing techniques.`
+# РЕЗУЛЬТАТ: Пошаговый план из 12 разделов + Техники закрытия возражений.`
       },
       {
         id: 'ex-3',
-        title: 'TG Channel: 7-Day Warmup',
+        title: 'TG-канал: Прогрев на 7 дней',
         description: 'Контент-план прогрева в Telegram для запуска нового потока или услуги.',
         niche: 'experts',
         type: 'content',
-        content: `# ROLE: Telegram Launch Expert
-# GOAL: Sell out [Product] in 7 days.
+        content: `# РОЛЬ: Эксперт по запускам в Telegram
+# ЦЕЛЬ: Распродать [Продукт] за 7 дней.
 
-## DAILY THEMES:
-- Day 1: The Invisible Enemy (What's stopping the audience).
-- Day 3: The Proof of Concept (Results + Case study).
-- Day 5: The "Why now?" (Market timing + Scarcity).
-- Day 7: The Opening (Logistics + Urgency).
+## ТЕМЫ ПО ДНЯМ:
+- День 1: Невидимый враг (Что на самом деле мешает аудитории).
+- Day 3: Доказательство концепции (Кейс + Разбор результата).
+- Day 5: Почему именно сейчас? (Контекст рынка + Дефицит).
+- Day 7: Окно открыто (Логистика + Срочность).
 
-# OUTPUT: 7 ready-to-post drafts with formatting (Bold/Emoji/Links).`
+# РЕЗУЛЬТАТ: 7 черновиков постов с форматированием (Жирный текст/Эмодзи/Ссылки).`
       },
       {
         id: 'ex-4',
-        title: 'DM Closing Script (Expert)',
+        title: 'DM Closing Script: Мастер продаж',
         description: 'Сценарий переписки для продажи дорогого наставничества или консалтинга.',
         niche: 'experts',
         type: 'copywriting',
-        content: `# ROLE: High-Ticket Closer
-# SCENARIO: User replied to a Story or commented on a Post.
+        content: `# РОЛЬ: Эксперт по продажам в переписке (High-Ticket Closer)
+# СЦЕНАРИЙ: Клиент ответил на Сторис или оставил коммент.
 
-## THE CONVERSATION FLOW:
-1. **The Investigation:** "What made you reach out today?"
-2. **The Gap Analysis:** "Where are you vs. Where do you want to be?"
-3. **The Professional Pitch:** "It sounds like you need [Solution]. Want to see how it works?"
-4. **The Objection Handling:** Templates for "Too expensive" and "Not now".
+## ПОТОК РАЗГОВОРА:
+1. **Исследование:** "Что именно заставило вас написать сегодня?"
+2. **Анализ разрыва:** "Где вы сейчас vs Где вы хотите быть?"
+3. **Профессиональный питч:** "Похоже, вам нужно [Решение]. Хотите узнать, как это работает?"
+4. **Работа с возражениями:** Шаблоны для "Дорого" и "Мне нужно подумать".
 
-# OUTPUT: Full DM script + qualifying questions.`
+# РЕЗУЛЬТАТ: Полный скрипт переписки + Квалифицирующие вопросы.`
       },
       {
         id: 'ex-5',
-        title: 'The "Magnet" Lead Gen',
-        description: 'Проектирование бесплатного продукта (Гайд/Квиз), который сегментирует базу.',
+        title: 'Проектирование Лид-магнита',
+        description: 'Создание бесплатного продукта (Гайд/Квиз), который сегментирует базу и продает.',
         niche: 'experts',
         type: 'content',
-        content: `# ROLE: Lead Magnet Architect
-# TARGET: [AUDIENCE]
+        content: `# РОЛЬ: Архитектор лид-магнитов
+# ЦЕЛЬ: Решить 1 проблему за 5 минут и создать желание купить основной продукт.
 
-## LEAD MAGNET SPECIFICATION:
-- Must solve 1 specific problem in < 5 minutes.
-- Must create a desire for the Main Product.
-- Examples: Calculator, Audit Checklist, 3-min Video Tutorial.
+## СПЕЦИФИКАЦИЯ:
+- Должен давать быстрый результат (Quick Win).
+- Должен сегментировать базу по уровню осознанности.
+- Примеры: Калькулятор окупаемости, Чек-лист аудита, Мини-курс из 3 видео.
 
-# OUTPUT: Full structure of the Lead Magnet + 5 magnetic titles.`
+# РЕЗУЛЬТАТ: Полная структура Лид-магнита + 5 цепляющих названий.`
       }
     ]
   },
@@ -472,36 +474,36 @@ export const PROMPT_CATEGORIES: Category[] = [
         description: 'Жесткий технический аудит любого промпта на предмет галлюцинаций и реальности.',
         niche: 'strategy',
         type: 'strategy',
-        content: `# ROLE: Conor (The Prompt Executioner / AI Logic Auditor)
-# TASK: Audit the following prompt: [INSERT PROMPT HERE]
+        content: `# РОЛЬ: Конор (Палач промптов / Аудитор ИИ-логики)
+# ЗАДАЧА: Провести аудит следующего промпта: [ВСТАВЬ ПРОМПТ]
 
-## AUDIT PROTOCOЛ:
-1. **Hallucination Risk:** Does this prompt ask for data the AI doesn't have?
-2. **Vagueness Check:** Are there words like "better", "great", "optimize" without metrics?
-3. **Logic Gaps:** Where will the AI "make things up" to satisfy the user?
-4. **The Conor Score:** 1-100 (100 = Industrial grade).
+## ПРОТОКОЛ АУДИТА:
+1. **Риск галлюцинаций:** Запрашивает ли этот промпт данные, которых нет у ИИ?
+2. **Проверка на "Воду":** Есть ли слова типа "лучше", "оптимизировать" без метрик?
+3. **Логические дыры:** Где ИИ начнет "фантазировать", чтобы угодить юзеру?
+4. **Оценка Конора:** 1-100 (100 = Промышленный стандарт).
 
-## OUTPUT FORMAT:
-- "The Verdict": One brutal sentence.
-- "Line-by-Line Execution": What the AI *actually* thinks for each line.
-- "The Reality Check": Why the user's result will be useless in the real world.`
+## ФОРМАТ ОТВЕТА:
+- "Вердикт": Одно безжалостное предложение.
+- "Построчный разбор": Что ИИ НА САМОМ ДЕЛЕ думает на каждой строке.
+- "Реальность": Почему результат будет бесполезен в реальном бизнесе.`
       },
       {
         id: 'conor-2',
-        title: 'Конор: Тюнинг на Максимум',
+        title: 'Конор: Тюнинг до Идеала',
         description: 'Переписывание "мусорных" маркетинговых промптов в рабочие алгоритмы.',
         niche: 'strategy',
         type: 'strategy',
-        content: `# ROLE: Conor (Prompt Optimizer / Logic Engineer)
-# TASK: Take the "Trash" prompt and make it "Gold".
+        content: `# РОЛЬ: Конор (Инженер логики / Оптимизатор промптов)
+# ЗАДАЧА: Взять "мусорный" промпт и превратить его в "золото".
 
-## THE REWRITING RULES:
-1. Replace adjectives with constraints.
-2. Add Chain-of-Thought requirements.
-3. Force the AI to ask questions BEFORE giving the answer.
-4. Set Persona and Tone parameters.
+## ПРАВИЛА ПЕРЕЗАПИСИ:
+1. Замени прилагательные на жесткие ограничения (Constraints).
+2. Добавь требование цепочки рассуждений (Chain-of-Thought).
+3. Заставь ИИ задавать вопросы ПЕРЕД тем, как давать ответ.
+4. Установи параметры Личности и Тональности.
 
-# OUTPUT: The Optimized Prompt + Comparison (Why the new one is 100x more useful).`
+# РЕЗУЛЬТАТ: Оптимизированный промпт + Сравнение (Почему новый промпт в 100 раз полезнее старого).`
       }
     ]
   }
