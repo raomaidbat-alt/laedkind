@@ -3,72 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CyberPrompt | High-End AI Intelligence</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Roboto+Mono:wght@300;400;500&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <title>CyberPrompt Pro | Библиотека ИИ-протоколов для бизнеса</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
-      --bg-dark: #020408;
-      --neon-cyan: #00f0ff;
-      --neon-purple: #7000ff;
-      --gradient: linear-gradient(135deg, #00f0ff 0%, #7000ff 100%);
+      --bg-dark: #060709;
+      --surface: #0c0e12;
+      --brand-emerald: #10b981;
+      --brand-indigo: #6366f1;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
     }
 
     * { scroll-behavior: smooth; cursor: default; }
-    body { background-color: var(--bg-dark); color: #fff; font-family: 'Roboto Mono', monospace; margin: 0; overflow-x: hidden; }
+    body { 
+      background-color: var(--bg-dark); 
+      color: var(--text-main); 
+      font-family: 'Inter', sans-serif; 
+      margin: 0; 
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
 
-    .Orbitron { font-family: 'Orbitron', sans-serif; }
+    .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-    .tron-grid {
+    .glow-bg {
       position: fixed;
       top: 0; left: 0; width: 100%; height: 100%;
       background: 
-        linear-gradient(0deg, transparent 24%, rgba(0, 240, 255, 0.03) 25%, rgba(0, 240, 255, 0.03) 26%, transparent 27%),
-        linear-gradient(90deg, transparent 24%, rgba(0, 240, 255, 0.03) 25%, rgba(0, 240, 255, 0.03) 26%, transparent 27%);
-      background-size: 60px 60px;
-      animation: grid-scroll 30s linear infinite;
+        radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.04) 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(99, 102, 241, 0.04) 0%, transparent 45%);
       z-index: -1; pointer-events: none;
     }
 
-    @keyframes grid-scroll {
-      0% { transform: perspective(1000px) rotateX(60deg) translateY(0); }
-      100% { transform: perspective(1000px) rotateX(60deg) translateY(60px); }
-    }
-
     .gradient-text {
-      background: var(--gradient);
+      background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
 
-    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal { opacity: 0; transform: translateY(15px); transition: all 0.6s cubic-bezier(0.2, 1, 0.3, 1); }
     .reveal.active { opacity: 1; transform: translateY(0); }
-
-    .glitch { position: relative; }
-    .glitch::before, .glitch::after {
-      content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.8;
-    }
-    .glitch::before { left: 2px; text-shadow: -2px 0 #ff00c1; clip: rect(44px, 450px, 56px, 0); animation: glitch-anim 5s infinite linear alternate-reverse; }
-    .glitch::after { left: -2px; text-shadow: -2px 0 #00fff9; clip: rect(44px, 450px, 56px, 0); animation: glitch-anim2 3s infinite linear alternate-reverse; }
-
-    @keyframes glitch-anim {
-      0% { clip: rect(31px, 9999px, 94px, 0); }
-      20% { clip: rect(62px, 9999px, 42px, 0); }
-      100% { clip: rect(44px, 9999px, 88px, 0); }
-    }
-    @keyframes glitch-anim2 {
-      0% { clip: rect(65px, 9999px, 100px, 0); }
-      60% { clip: rect(20px, 9999px, 45px, 0); }
-      100% { clip: rect(42px, 9999px, 55px, 0); }
-    }
 
     .custom-scrollbar::-webkit-scrollbar { width: 4px; }
     .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-    .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0, 240, 255, 0.2); border-radius: 10px; }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(0, 240, 255, 0.5); }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(16, 185, 129, 0.2); border-radius: 10px; }
+
+    .nav-glass {
+      background: rgba(6, 7, 9, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .tab-active {
+      color: var(--brand-emerald);
+      position: relative;
+    }
+    .tab-active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--brand-emerald);
+      box-shadow: 0 0 12px var(--brand-emerald);
+    }
+
+    .btn-premium {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      transition: all 0.3s ease;
+    }
+    .btn-premium:hover {
+      box-shadow: 0 0 35px rgba(16, 185, 129, 0.25);
+      transform: translateY(-2px);
+    }
+    
+    .card-glass {
+      background: rgba(255, 255, 255, 0.015);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.4s ease;
+    }
+    .card-glass:hover {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: rgba(16, 185, 129, 0.3);
+      transform: translateY(-4px);
+    }
   </style>
 <script type="importmap">
 {
@@ -84,7 +110,7 @@
 </head>
 <body>
   <div id="root"></div>
-  <div class="tron-grid"></div>
+  <div class="glow-bg"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
